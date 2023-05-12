@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
+  background-color: #E8E8E2;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.app-submit{
+  color: #E8E8E2;
+  background-color: black;
+  padding: 5px;
+  border: 0.5px solid black;
+  width:280px;
+  border-radius: 20px;
+  min-height: 30px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: 0.1s linear all;
+}
+.app-submit:hover{
+  color: black;
+  background-color: #E8E8E2;
+  cursor: pointer;
+}
+
+.app-container-first-div{
+  margin-bottom: 5%;
+}
+
+.non-active-second{
+  display: none;
+}
+.non-active-submit{
+  display: none;
+}
+
+.display-download-btns{
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  gap: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+/* histogram css*/
+
+.histogram {
+  background-color: #f0f6f5;
+  border: 1px solid grey;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.histogram-label {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: black;
+  margin-bottom: 5px;
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+
+}
+
+.histogram-bar {
+  fill: #3498db;
+  stroke: none;
+}
+.app-submit a{
+  color: #E8E8E2;
+}
+.app-submit a:hover{
+  color: black;
 }
